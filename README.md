@@ -22,7 +22,7 @@ Our project vision is to objectively examine the exceptional abilities of Stephe
 
 ## Images
 
-<img src ="[images/test.png](https://i.pinimg.com/736x/0e/90/87/0e9087393864d1e1240be2f93fc8bff9.jpg)" width="100px">
+<img src ="[curry.jpeg])" width="100px">
 
 
 ## References
