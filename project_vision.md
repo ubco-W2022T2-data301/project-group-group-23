@@ -4,4 +4,4 @@ Our project vision is to objectively examine the exceptional abilities of Stephe
 
 ## Contracted Grade
 
-For this project, we agree to contract for a { A+/A/B/C }.
+For this project, we agree to contract for a { A+}.
