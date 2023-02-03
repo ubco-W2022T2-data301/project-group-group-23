@@ -1,7 +1,4 @@
-# Group YY - {Short snappy Title of your project}
-
-- Group 23 (The Greatness of Curry)
-
+# Group 23 (The Greatness of Curry)
 ## Milestones
 
 Details for Milestone are available on Canvas (left sidebar, Course Project).
