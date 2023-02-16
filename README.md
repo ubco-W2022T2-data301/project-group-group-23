@@ -1,14 +1,14 @@
-# Group 23 (The Greatness of Curry)
+# Group 23 (The Greatness of Curry and His Impact on Basketball)
 ## Milestones
 
 Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Describe your topic/interest in about 150-200 words
 
-Our project aims to objectively assess Stephen Curry's exceptional abilities as a player. We plan to compare his statistics with those of other players in the NBA, gaining a deeper understanding of his unique skills and capabilities.Our focus is to provide a clear, impartial evaluation of his overall performance and showcase his exceptional talents to the world. In addition we also want to see how the midrange game has been dying over  the years and the why people call three pointer as the pinoeer of the modern nba.  This project will offer valuable insights into the world of professional basketball and the talented players who play the game. With a clear and concise evaluation of Stephen Curry's abilities and overall trends of NBA , we hope to provide an objective analysis of his exceptional skills.
+Throughout our time as NBA fans, we have seen the game of basketball and how players play it transform drastically. In the last decade, teams have become much more heavily reliant on the three-point shot and much less on inefficient mid-range shots. The player that has contributed to the rise of the three-point shot the most is Stephen Curry, an electrifying shooter considered by many to be the most excellent shooter and one of the greatest players of all time. While it is evident how talented Stephen Curry is just by watching him, we want to use data to quantify his greatness in our project. We want to compare his statistics, specifically his shooting stats, to other players to show how much of an outlier Curry is. Additionally, we want to track his impact on other players and teams by seeing how much three-point shooting volumes and percentages have changed since Curry joined the league. We also want to see the decrease in the volume of mid-range jump shots.
 
 ## Describe your dataset in about 150-200 words
-The 5 datasets offered offer a comprehensive overview of the NBA from the 2004 season to the most recent update. The "games.csv" dataset contains information on every game played during this time period, including the date, teams involved, and key details such as the number of points scored. The "games_details.csv" expands upon this information, providing detailed statistics for each player in a given game. The "players.csv" dataset lists all players with their names. The "ranking.csv" dataset provides the current ranking of NBA teams, which is separated into the western and eastern conferences. Lastly, the "teams.csv" dataset includes details on all teams in the NBA. These datasets provide valuable information for NBA enthusiasts, analysts, and anyone looking to gain a deeper understanding of the league. With a wealth of data at your fingertips, you'll be able to analyze trends, compare player performance, and follow the progress of your favorite teams and players.
+This dataset contains a variety of relevant stats from the NBA and two other related, short-lived leagues dating back to the 1940s. These stats relate to players and teams and cover a variety of data such as per-game stats, season totals, stats standardized per 36 minutes or 100 possessions, and end-of-season awards. Additionally, there are information files that identify players and teams, matching them to their relevant statistics. The data from this set we will focus on for our project are the player totals, player per game, player shooting, player advanced, and team totals. These are the most relevant statistics to our project and will provide us with enough valuable information to conclude. 
 
 ## Team Members
 
@@ -22,7 +22,6 @@ The 5 datasets offered offer a comprehensive overview of the NBA from the 2004 s
 
 ## References
 
-https://stats.nba.com/
-https://www.kaggle.com/datasets/nathanlauga/nba-games
+https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats?select=Team+Stats+Per+100+Poss.csv
 
 
