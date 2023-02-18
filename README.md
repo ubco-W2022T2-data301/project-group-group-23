@@ -5,7 +5,7 @@ Details for Milestone are available on Canvas (left sidebar, Course Project).
 
 ## Describe your topic/interest in about 150-200 words
 
-Through our analytics project, we aim to analyze the impact of Stephen Curry on the game of basketball. Specifically, we want to examine how his playing style has contributed to the rise of three-point shooting and the decline of mid-range shooting in the NBA. By conducting this research, we will quantify Curry’s greatness through data analysis. We also want to show how Curry’s impact on the game has given him a unique place in basketball history.
+Through our analytics project, we aim to analyze the impact of Stephen Curry on the game of basketball. Specifically, we want to examine how his playing style has contributed to the rise of three-point shooting and the decline of mid-range shooting in the NBA. By conducting this research, we will quantify Curry’s abilities and skills through data analysis. We also want to show how Curry’s impact on the game has given him a unique place in basketball history.
 
 We are particularly interested in this topic because we are fans of the NBA and have observed the game's evolution over the years. We have seen the impact of Curry’s style of play on the game. Since teams now rely so heavily on data and statistics, we will also have plenty of information to show an analytical summary of Curry’s excellence. This data is also very presentable in a Dashboard, and we believe we can make this data visually appealing and easy to understand.
 
