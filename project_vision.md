@@ -1,7 +1,7 @@
 # Project Vision
 
-Our project vision is to see how genuinely talented Stephen Curry is. We can compare his statistics, particularly his scoring and shooting statistics, to other players. Additionally, we can see how he has changed the game by showing how mid-range shots have become less prevalent and three-point shots have become more prevalent.
+Our project vision is to showcase how the NBA has changed over the years. Since its inception, the NBA has transformed from a league dominated by shots close to the basket to a distance-shooting driven league. We can demonstarted this by showing the dominance of Stephen Curry, the rise of the three-point shot, and the decline of the mid-range shot.
 
 ## Contracted Grade
 
-For this project, we agree to contract for a { A+}.
+For this project, we agree to contract for a {A+}.
