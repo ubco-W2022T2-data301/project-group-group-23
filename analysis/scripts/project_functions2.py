@@ -88,6 +88,7 @@ def load_and_process_per_game(url_or_path_to_csv_file):
             three_pointers_to_attempts_ratio=lambda x: x['three_point_attempts_per_game'] / x['games_played'],
             adjusted_three_point_percentage=lambda x: x['three_point_percentage'] * 1.5
         )
+        .loc[lambda x: x['team'] != 'TOT']
     )
     
     # Return the last dataframe
