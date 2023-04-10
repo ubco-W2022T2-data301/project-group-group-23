@@ -14,27 +14,3 @@ def select_player_stats(url_or_path_to_csv_file):
     df = df.loc[lambda x: (x['points_per_game'] >= 5) & ((x['points_per_game'] <= 40) | (x['points_per_game'] >= 30))]
     return df
 
-def clean_advanced_stats(url_or_path_to_csv_file):
-    # Load the data and select columns
-    advanced_stats = (pd.read_csv(url_or_path_to_csv_file)
-                      [['player_name', 'season', 'position', 'minutes_played', 'true_shooting_percentage', 'offensive_win_shares',  'box_plus_minus']]
-                      .loc[lambda x: x['minutes_played'] >= 500])
-
-    # Calculate the upper and lower bounds for filtering outliers
-    q1 = advanced_stats[['true_shooting_percentage', 'offensive_win_shares', 'box_plus_minus']].quantile(0.25)
-    q3 = advanced_stats[['true_shooting_percentage', 'offensive_win_shares', 'box_plus_minus']].quantile(0.75)
-    iqr = q3 - q1
-    upper_bound = q3 + 1.5 * iqr
-    lower_bound = q1 - 1.5 * iqr
-
-    # Filter the dataframe to remove outliers
-    advanced_stats = (advanced_stats
-                      .loc[(lambda x: x['true_shooting_percentage'].between(lower_bound['true_shooting_percentage'], upper_bound['true_shooting_percentage'])) &
-                           (lambda x: x['offensive_win_shares'].between(lower_bound['offensive_win_shares'], upper_bound['offensive_win_shares'])) &
-                           (lambda x: x['box_plus_minus'].between(lower_bound['box_plus_minus'], upper_bound['box_plus_minus']))])
-
-    # Replace a value within the dataframe
-    advanced_stats = (advanced_stats
-                      .replace({'position': {'Isaiah Thomas': 'PG'}}))
-
-    return advanced_stats
