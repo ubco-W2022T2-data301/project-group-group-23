@@ -23,22 +23,3 @@ def display_player_stats(player_stats):
             .set_precision(2)
             .set_table_styles(styles))
     
-    
-def display_averages_stats(df):
-    # Group the dataframe by player_name and calculate the mean
-    averages = df.groupby('player_name').mean()
-
-    # Select only the columns we're interested in
-    averages = averages[['points_per_game', 'three_point_percentage']]
-
-    # Rename the columns to indicate that they represent averages
-    averages = averages.rename(columns={
-        'points_per_game': 'Avg Points Per Game',
-        'three_point_percentage': 'Avg Three-Point Percentage'
-    })
-
-    # Format the table for better readability
-    averages_formatted = averages.style.format({
-        'Avg Points Per Game': '{:.1f}',
-        'Avg Three-Point Percentage': '{:.3f}'
-    }).set_caption("AVERAGES BY PLAYER")
