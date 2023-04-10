@@ -26,6 +26,7 @@ def player_per_game_processed(url_or_path_to_csv_file):
             'x3pa_per_game': 'three_point_attempts_per_game',
             'x3p_percent': 'three_point_percentage',
             'x2p_per_game': 'two_pointers_per_game',
+            'x2p':'two_pointers',
             'x2pa_per_game': 'two_point_attempts_per_game',
             'x2p_percent': 'two_point_percentage',
             'e_fg_percent': 'effective_field_goal_percentage',
@@ -88,13 +89,12 @@ def load_and_process_per_game(url_or_path_to_csv_file):
     df3 = (
         df2
         .loc[lambda x: x['season'] >= 1980]
-        .assign(players=['Michael Jordan', 'DeMar DeRozan', 'Stephen Curry'])
+        .assign(players=lambda x: x['player_name'].isin(['Michael Jordan', 'DeMar DeRozan', 'Stephen Curry']).astype(str))
         .merge(pd.read_csv("../data/processed/merged_cleaned.csv", index_col=[0])
                .loc[lambda df: df['player_name'].isin(['Michael Jordan', 'DeMar DeRozan', 'Stephen Curry'])]
                .loc[:, ['player_name', 'season', 'two_pointers']]
-              )
+             )
     )
-    
+
     # Return the last dataframe
-    
     return df3
