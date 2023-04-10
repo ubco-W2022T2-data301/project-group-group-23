@@ -24,7 +24,7 @@ def display_player_stats(player_stats):
             .set_table_styles(styles))
     
     
-    def display_averages_stats(df):
+def display_averages_stats(df):
     # Group the dataframe by player_name and calculate the mean
     averages = df.groupby('player_name').mean()
 
