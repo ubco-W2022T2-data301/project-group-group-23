@@ -93,3 +93,24 @@ def load_and_process_per_game(url_or_path_to_csv_file):
     # Return the last dataframe
     
     return df4
+
+
+import pandas as pd
+
+def filter_player_data(filename):
+    # Select only the relevant columns and players
+    df = (
+        pd.read_csv(file_path)
+        .loc[lambda x: x['player_name'].isin(['Stephen Curry', 'Ray Allen', 'Reggie Miller'])]
+        [['player_name', 'season', 'points_per_game', 'three_point_percentage','games_played']]
+    )
+
+    # Filter out any extreme outliers based on the points_per_game column
+    # Here, we assume any score below 5 or above 40 is an outlier,
+    # but any score between 30 and 40 is not an outlier
+    df = df.loc[lambda x: (x['points_per_game'] >= 5) & (x['points_per_game'] <= 40) | (x['points_per_game'] >= 30)]
+
+    return df
+
+
+
