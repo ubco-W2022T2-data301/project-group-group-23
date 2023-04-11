@@ -1,0 +1,2 @@
+**Question 2 + Results**
+My research related to the rise of the three-point shot in the NBA. Specifically, my research question was: how much has the three-point volume increased over time in the NBA, and has the three-point percentage increased the same amount? 
