@@ -19,7 +19,6 @@ def display_player_stats(player_stats):
         {'selector': 'th', 'props': [('background-color', 'lightgray'), ('border', '2px solid black'), ('font-weight', 'bold')]},
         {'selector': 'td', 'props': [('border', '1px solid black')]}
     ]
-    display(player_stats.style.set_caption('Player Stats Summary')
-            .set_precision(2)
+    display(player_stats.style.set_caption('Player Stats Summary').format(precision=..))
             .set_table_styles(styles))
     
