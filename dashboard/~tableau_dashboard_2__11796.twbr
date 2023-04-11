@@ -1,0 +1,1842 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='team_totals_cleaned.csv (Multiple Connections)' inline='true' name='federated.0vnk9np1rodu6h197wa2g055r209' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='team_totals_cleaned' name='textscan.02if9au1w2srvt1gxmke200p0p49'>
+            <connection class='textscan' directory='C:/Users/tateb/Desktop/School/Data301/project-group-group-23/data/processed' filename='team_totals_cleaned.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='player_totals_cleaned' name='textscan.0b4bmiy1blgs0k1g89cwf0vylqqp'>
+            <connection class='textscan' directory='C:/Users/tateb/Desktop/School/Data301/project-group-group-23/data/processed' filename='player_totals_cleaned.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='advanced_cleaned' name='textscan.15ossnh13gfr8z1g5wf7103qt54a'>
+            <connection class='textscan' directory='C:/Users/tateb/Desktop/School/Data301/project-group-group-23/data/processed' filename='advanced_cleaned.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='player_per_game_cleaned' name='textscan.0jgiawq0twhmjo19w8k6r069c2jl'>
+            <connection class='textscan' directory='C:/Users/tateb/Desktop/School/Data301/project-group-group-23/data/processed' filename='player_per_game_cleaned.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='player_shooting_cleaned' name='textscan.02kadea0knuy5w14ese6n1a8awjy'>
+            <connection class='textscan' directory='C:/Users/tateb/Desktop/School/Data301/project-group-group-23/data/processed' filename='player_shooting_cleaned.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='merged_cleaned' name='textscan.1d08xjl0xepr6j12j9osd14f1b29'>
+            <connection class='textscan' directory='C:/Users/tateb/Desktop/School/Data301/project-group-group-23/data/processed' filename='merged_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0b4bmiy1blgs0k1g89cwf0vylqqp' name='player_totals_cleaned.csv' table='[player_totals_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='season_id' ordinal='0' />
+            <column datatype='integer' name='season' ordinal='1' />
+            <column datatype='integer' name='player_id' ordinal='2' />
+            <column datatype='string' name='player_name' ordinal='3' />
+            <column datatype='real' name='birth_year' ordinal='4' />
+            <column datatype='string' name='position' ordinal='5' />
+            <column datatype='real' name='player_age' ordinal='6' />
+            <column datatype='integer' name='years_of_experience' ordinal='7' />
+            <column datatype='string' name='league' ordinal='8' />
+            <column datatype='string' name='team' ordinal='9' />
+            <column datatype='integer' name='games_played' ordinal='10' />
+            <column datatype='real' name='games_started' ordinal='11' />
+            <column datatype='real' name='minutes_played' ordinal='12' />
+            <column datatype='integer' name='field_goals' ordinal='13' />
+            <column datatype='integer' name='field_goal_attempts' ordinal='14' />
+            <column datatype='real' name='field_goal_percentage' ordinal='15' />
+            <column datatype='real' name='three_pointers' ordinal='16' />
+            <column datatype='real' name='three_point_attempts' ordinal='17' />
+            <column datatype='real' name='three_point_percentage' ordinal='18' />
+            <column datatype='integer' name='two_pointers' ordinal='19' />
+            <column datatype='integer' name='two_point_attempts' ordinal='20' />
+            <column datatype='real' name='two_point_percentage' ordinal='21' />
+            <column datatype='real' name='effective_field_goal_percentage' ordinal='22' />
+            <column datatype='integer' name='free_throws' ordinal='23' />
+            <column datatype='integer' name='free_throw_attempts' ordinal='24' />
+            <column datatype='real' name='free_throw_percentage' ordinal='25' />
+            <column datatype='real' name='offensive_rebounds' ordinal='26' />
+            <column datatype='real' name='defensive_rebounds' ordinal='27' />
+            <column datatype='real' name='total_rebounds' ordinal='28' />
+            <column datatype='integer' name='assists' ordinal='29' />
+            <column datatype='real' name='steals' ordinal='30' />
+            <column datatype='real' name='blocks' ordinal='31' />
+            <column datatype='real' name='turnovers' ordinal='32' />
+            <column datatype='integer' name='personal_fouls' ordinal='33' />
+            <column datatype='integer' name='points' ordinal='34' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.02if9au1w2srvt1gxmke200p0p49' name='team_totals_cleaned.csv' table='[team_totals_cleaned#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='season' ordinal='0' />
+              <column datatype='string' name='league' ordinal='1' />
+              <column datatype='string' name='team' ordinal='2' />
+              <column datatype='string' name='team_abbreviation' ordinal='3' />
+              <column datatype='boolean' name='playoffs' ordinal='4' />
+              <column datatype='real' name='games_played' ordinal='5' />
+              <column datatype='real' name='minutes_played' ordinal='6' />
+              <column datatype='real' name='field_goals' ordinal='7' />
+              <column datatype='real' name='field_goal_attempts' ordinal='8' />
+              <column datatype='real' name='field_goal_percentage' ordinal='9' />
+              <column datatype='real' name='three_pointers' ordinal='10' />
+              <column datatype='real' name='three_point_attempts' ordinal='11' />
+              <column datatype='real' name='three_pointers_per_game' ordinal='12' />
+              <column datatype='real' name='three_point_attempts_per_game' ordinal='13' />
+              <column datatype='real' name='three_point_percentage' ordinal='14' />
+              <column datatype='real' name='two_pointers' ordinal='15' />
+              <column datatype='real' name='two_point_attempts' ordinal='16' />
+              <column datatype='real' name='two_point_percentage' ordinal='17' />
+              <column datatype='real' name='free_throws' ordinal='18' />
+              <column datatype='real' name='free_throw_attempts' ordinal='19' />
+              <column datatype='real' name='free_throw_percentage' ordinal='20' />
+              <column datatype='real' name='offensive_rebounds' ordinal='21' />
+              <column datatype='real' name='defensive_rebounds' ordinal='22' />
+              <column datatype='real' name='total_rebounds' ordinal='23' />
+              <column datatype='real' name='assists' ordinal='24' />
+              <column datatype='real' name='steals' ordinal='25' />
+              <column datatype='real' name='blocks' ordinal='26' />
+              <column datatype='real' name='turnovers' ordinal='27' />
+              <column datatype='real' name='personal_fouls' ordinal='28' />
+              <column datatype='real' name='points' ordinal='29' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0b4bmiy1blgs0k1g89cwf0vylqqp' name='player_totals_cleaned.csv' table='[player_totals_cleaned#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='season_id' ordinal='0' />
+              <column datatype='integer' name='season' ordinal='1' />
+              <column datatype='integer' name='player_id' ordinal='2' />
+              <column datatype='string' name='player_name' ordinal='3' />
+              <column datatype='real' name='birth_year' ordinal='4' />
+              <column datatype='string' name='position' ordinal='5' />
+              <column datatype='real' name='player_age' ordinal='6' />
+              <column datatype='integer' name='years_of_experience' ordinal='7' />
+              <column datatype='string' name='league' ordinal='8' />
+              <column datatype='string' name='team' ordinal='9' />
+              <column datatype='integer' name='games_played' ordinal='10' />
+              <column datatype='real' name='games_started' ordinal='11' />
+              <column datatype='real' name='minutes_played' ordinal='12' />
+              <column datatype='integer' name='field_goals' ordinal='13' />
+              <column datatype='integer' name='field_goal_attempts' ordinal='14' />
+              <column datatype='real' name='field_goal_percentage' ordinal='15' />
+              <column datatype='real' name='three_pointers' ordinal='16' />
+              <column datatype='real' name='three_point_attempts' ordinal='17' />
+              <column datatype='real' name='three_point_percentage' ordinal='18' />
+              <column datatype='integer' name='two_pointers' ordinal='19' />
+              <column datatype='integer' name='two_point_attempts' ordinal='20' />
+              <column datatype='real' name='two_point_percentage' ordinal='21' />
+              <column datatype='real' name='effective_field_goal_percentage' ordinal='22' />
+              <column datatype='integer' name='free_throws' ordinal='23' />
+              <column datatype='integer' name='free_throw_attempts' ordinal='24' />
+              <column datatype='real' name='free_throw_percentage' ordinal='25' />
+              <column datatype='real' name='offensive_rebounds' ordinal='26' />
+              <column datatype='real' name='defensive_rebounds' ordinal='27' />
+              <column datatype='real' name='total_rebounds' ordinal='28' />
+              <column datatype='integer' name='assists' ordinal='29' />
+              <column datatype='real' name='steals' ordinal='30' />
+              <column datatype='real' name='blocks' ordinal='31' />
+              <column datatype='real' name='turnovers' ordinal='32' />
+              <column datatype='integer' name='personal_fouls' ordinal='33' />
+              <column datatype='integer' name='points' ordinal='34' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[assists (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[assists]' />
+          <map key='[assists]' value='[team_totals_cleaned.csv].[assists]' />
+          <map key='[birth_year]' value='[player_totals_cleaned.csv].[birth_year]' />
+          <map key='[blocks (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[blocks]' />
+          <map key='[blocks]' value='[team_totals_cleaned.csv].[blocks]' />
+          <map key='[defensive_rebounds (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[defensive_rebounds]' />
+          <map key='[defensive_rebounds]' value='[team_totals_cleaned.csv].[defensive_rebounds]' />
+          <map key='[effective_field_goal_percentage]' value='[player_totals_cleaned.csv].[effective_field_goal_percentage]' />
+          <map key='[field_goal_attempts (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[field_goal_attempts]' />
+          <map key='[field_goal_attempts]' value='[team_totals_cleaned.csv].[field_goal_attempts]' />
+          <map key='[field_goal_percentage (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[field_goal_percentage]' />
+          <map key='[field_goal_percentage]' value='[team_totals_cleaned.csv].[field_goal_percentage]' />
+          <map key='[field_goals (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[field_goals]' />
+          <map key='[field_goals]' value='[team_totals_cleaned.csv].[field_goals]' />
+          <map key='[free_throw_attempts (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[free_throw_attempts]' />
+          <map key='[free_throw_attempts]' value='[team_totals_cleaned.csv].[free_throw_attempts]' />
+          <map key='[free_throw_percentage (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[free_throw_percentage]' />
+          <map key='[free_throw_percentage]' value='[team_totals_cleaned.csv].[free_throw_percentage]' />
+          <map key='[free_throws (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[free_throws]' />
+          <map key='[free_throws]' value='[team_totals_cleaned.csv].[free_throws]' />
+          <map key='[games_played (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[games_played]' />
+          <map key='[games_played]' value='[team_totals_cleaned.csv].[games_played]' />
+          <map key='[games_started]' value='[player_totals_cleaned.csv].[games_started]' />
+          <map key='[league (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[league]' />
+          <map key='[league]' value='[team_totals_cleaned.csv].[league]' />
+          <map key='[minutes_played (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[minutes_played]' />
+          <map key='[minutes_played]' value='[team_totals_cleaned.csv].[minutes_played]' />
+          <map key='[offensive_rebounds (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[offensive_rebounds]' />
+          <map key='[offensive_rebounds]' value='[team_totals_cleaned.csv].[offensive_rebounds]' />
+          <map key='[personal_fouls (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[personal_fouls]' />
+          <map key='[personal_fouls]' value='[team_totals_cleaned.csv].[personal_fouls]' />
+          <map key='[player_age]' value='[player_totals_cleaned.csv].[player_age]' />
+          <map key='[player_id]' value='[player_totals_cleaned.csv].[player_id]' />
+          <map key='[player_name]' value='[player_totals_cleaned.csv].[player_name]' />
+          <map key='[playoffs]' value='[team_totals_cleaned.csv].[playoffs]' />
+          <map key='[points (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[points]' />
+          <map key='[points]' value='[team_totals_cleaned.csv].[points]' />
+          <map key='[position]' value='[player_totals_cleaned.csv].[position]' />
+          <map key='[season (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[season]' />
+          <map key='[season]' value='[team_totals_cleaned.csv].[season]' />
+          <map key='[season_id]' value='[player_totals_cleaned.csv].[season_id]' />
+          <map key='[steals (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[steals]' />
+          <map key='[steals]' value='[team_totals_cleaned.csv].[steals]' />
+          <map key='[team (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[team]' />
+          <map key='[team]' value='[team_totals_cleaned.csv].[team]' />
+          <map key='[team_abbreviation]' value='[team_totals_cleaned.csv].[team_abbreviation]' />
+          <map key='[three_point_attempts (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[three_point_attempts]' />
+          <map key='[three_point_attempts]' value='[team_totals_cleaned.csv].[three_point_attempts]' />
+          <map key='[three_point_attempts_per_game]' value='[team_totals_cleaned.csv].[three_point_attempts_per_game]' />
+          <map key='[three_point_percentage (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[three_point_percentage]' />
+          <map key='[three_point_percentage]' value='[team_totals_cleaned.csv].[three_point_percentage]' />
+          <map key='[three_pointers (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[three_pointers]' />
+          <map key='[three_pointers]' value='[team_totals_cleaned.csv].[three_pointers]' />
+          <map key='[three_pointers_per_game]' value='[team_totals_cleaned.csv].[three_pointers_per_game]' />
+          <map key='[total_rebounds (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[total_rebounds]' />
+          <map key='[total_rebounds]' value='[team_totals_cleaned.csv].[total_rebounds]' />
+          <map key='[turnovers (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[turnovers]' />
+          <map key='[turnovers]' value='[team_totals_cleaned.csv].[turnovers]' />
+          <map key='[two_point_attempts (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[two_point_attempts]' />
+          <map key='[two_point_attempts]' value='[team_totals_cleaned.csv].[two_point_attempts]' />
+          <map key='[two_point_percentage (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[two_point_percentage]' />
+          <map key='[two_point_percentage]' value='[team_totals_cleaned.csv].[two_point_percentage]' />
+          <map key='[two_pointers (player_totals_cleaned.csv)]' value='[player_totals_cleaned.csv].[two_pointers]' />
+          <map key='[two_pointers]' value='[team_totals_cleaned.csv].[two_pointers]' />
+          <map key='[years_of_experience]' value='[player_totals_cleaned.csv].[years_of_experience]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>league</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[league]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>league</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team_abbreviation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team_abbreviation]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>team_abbreviation</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playoffs</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[playoffs]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>playoffs</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games_played</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[games_played]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>games_played</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_played</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minutes_played]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>minutes_played</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>field_goals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[field_goals]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>field_goals</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>field_goal_attempts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[field_goal_attempts]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>field_goal_attempts</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>field_goal_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[field_goal_percentage]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>field_goal_percentage</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_pointers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_pointers]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_pointers</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_point_attempts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_point_attempts]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_point_attempts</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_pointers_per_game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_pointers_per_game]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_pointers_per_game</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_point_attempts_per_game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_point_attempts_per_game]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_point_attempts_per_game</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_point_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_point_percentage]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_point_percentage</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>two_pointers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[two_pointers]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>two_pointers</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>two_point_attempts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[two_point_attempts]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>two_point_attempts</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>two_point_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[two_point_percentage]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>two_point_percentage</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_throws</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[free_throws]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>free_throws</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_throw_attempts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[free_throw_attempts]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>free_throw_attempts</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_throw_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[free_throw_percentage]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>free_throw_percentage</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offensive_rebounds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[offensive_rebounds]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>offensive_rebounds</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defensive_rebounds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[defensive_rebounds]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>defensive_rebounds</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rebounds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_rebounds]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>total_rebounds</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[assists]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>assists</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>steals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[steals]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>steals</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blocks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[blocks]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>blocks</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>turnovers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[turnovers]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>turnovers</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>personal_fouls</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[personal_fouls]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>personal_fouls</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>points</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[points]</local-name>
+            <parent-name>[team_totals_cleaned.csv]</parent-name>
+            <remote-alias>points</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season_id]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>season_id</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[player_id]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>player_id</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_name]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>player_name</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[birth_year]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>birth_year</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[position]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>position</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[player_age]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>player_age</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>years_of_experience</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[years_of_experience]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>years_of_experience</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>league</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[league (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>league</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>team</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games_played</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[games_played (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>games_played</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>games_started</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[games_started]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>games_started</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes_played</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minutes_played (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>minutes_played</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>field_goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[field_goals (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>field_goals</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>field_goal_attempts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[field_goal_attempts (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>field_goal_attempts</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>field_goal_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[field_goal_percentage (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>field_goal_percentage</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_pointers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_pointers (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_pointers</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_point_attempts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_point_attempts (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_point_attempts</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>three_point_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[three_point_percentage (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>three_point_percentage</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>two_pointers</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[two_pointers (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>two_pointers</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>two_point_attempts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[two_point_attempts (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>two_point_attempts</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>two_point_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[two_point_percentage (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>two_point_percentage</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>effective_field_goal_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[effective_field_goal_percentage]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>effective_field_goal_percentage</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_throws</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[free_throws (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>free_throws</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_throw_attempts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[free_throw_attempts (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>free_throw_attempts</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_throw_percentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[free_throw_percentage (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>free_throw_percentage</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offensive_rebounds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[offensive_rebounds (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>offensive_rebounds</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defensive_rebounds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[defensive_rebounds (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>defensive_rebounds</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_rebounds</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_rebounds (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>total_rebounds</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[assists (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>assists</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>steals</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[steals (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>steals</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blocks</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[blocks (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>blocks</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>turnovers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[turnovers (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>turnovers</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>personal_fouls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[personal_fouls (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>personal_fouls</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[points (player_totals_cleaned.csv)]</local-name>
+            <parent-name>[player_totals_cleaned.csv]</parent-name>
+            <remote-alias>points</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='player_totals_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='team_totals_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542]' role='measure' type='quantitative' />
+      <column caption='Assists (Player Totals Cleaned.Csv)' datatype='integer' name='[assists (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Assists' datatype='real' name='[assists]' role='measure' type='quantitative' />
+      <column caption='Birth Year' datatype='real' name='[birth_year]' role='dimension' type='quantitative' />
+      <column caption='Blocks (Player Totals Cleaned.Csv)' datatype='real' name='[blocks (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Blocks' datatype='real' name='[blocks]' role='measure' type='quantitative' />
+      <column caption='Defensive Rebounds (Player Totals Cleaned.Csv)' datatype='real' name='[defensive_rebounds (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Defensive Rebounds' datatype='real' name='[defensive_rebounds]' role='measure' type='quantitative' />
+      <column caption='Effective Field Goal Percentage' datatype='real' name='[effective_field_goal_percentage]' role='measure' type='quantitative' />
+      <column caption='Field Goal Attempts (Player Totals Cleaned.Csv)' datatype='integer' name='[field_goal_attempts (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Field Goal Attempts' datatype='real' name='[field_goal_attempts]' role='measure' type='quantitative' />
+      <column caption='Field Goal Percentage (Player Totals Cleaned.Csv)' datatype='real' name='[field_goal_percentage (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Field Goal Percentage' datatype='real' name='[field_goal_percentage]' role='measure' type='quantitative' />
+      <column caption='Field Goals (Player Totals Cleaned.Csv)' datatype='integer' name='[field_goals (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Field Goals' datatype='real' name='[field_goals]' role='measure' type='quantitative' />
+      <column caption='Free Throw Attempts (Player Totals Cleaned.Csv)' datatype='integer' name='[free_throw_attempts (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Free Throw Attempts' datatype='real' name='[free_throw_attempts]' role='measure' type='quantitative' />
+      <column caption='Free Throw Percentage (Player Totals Cleaned.Csv)' datatype='real' name='[free_throw_percentage (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Free Throw Percentage' datatype='real' name='[free_throw_percentage]' role='measure' type='quantitative' />
+      <column caption='Free Throws (Player Totals Cleaned.Csv)' datatype='integer' name='[free_throws (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Free Throws' datatype='real' name='[free_throws]' role='measure' type='quantitative' />
+      <column caption='Games Played (Player Totals Cleaned.Csv)' datatype='integer' name='[games_played (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Games Played' datatype='real' name='[games_played]' role='measure' type='quantitative' />
+      <column caption='Games Started' datatype='real' name='[games_started]' role='measure' type='quantitative' />
+      <column caption='League (Player Totals Cleaned.Csv)' datatype='string' name='[league (player_totals_cleaned.csv)]' role='dimension' type='nominal' />
+      <column caption='League' datatype='string' name='[league]' role='dimension' type='nominal' />
+      <column caption='Minutes Played (Player Totals Cleaned.Csv)' datatype='real' name='[minutes_played (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Minutes Played' datatype='real' name='[minutes_played]' role='measure' type='quantitative' />
+      <column caption='Offensive Rebounds (Player Totals Cleaned.Csv)' datatype='real' name='[offensive_rebounds (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Offensive Rebounds' datatype='real' name='[offensive_rebounds]' role='measure' type='quantitative' />
+      <column caption='Personal Fouls (Player Totals Cleaned.Csv)' datatype='integer' name='[personal_fouls (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Personal Fouls' datatype='real' name='[personal_fouls]' role='measure' type='quantitative' />
+      <column caption='Player Age' datatype='real' name='[player_age]' role='measure' type='quantitative' />
+      <column caption='Player Id' datatype='integer' name='[player_id]' role='dimension' type='ordinal' />
+      <column caption='Player Name' datatype='string' name='[player_name]' role='dimension' type='nominal' />
+      <column caption='Playoffs' datatype='boolean' name='[playoffs]' role='dimension' type='nominal' />
+      <column caption='Points (Player Totals Cleaned.Csv)' datatype='integer' name='[points (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Points' datatype='real' name='[points]' role='measure' type='quantitative' />
+      <column caption='Position' datatype='string' name='[position]' role='dimension' type='nominal' />
+      <column caption='Season (Player Totals Cleaned.Csv)' datatype='integer' name='[season (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+      <column caption='Season Id' datatype='integer' name='[season_id]' role='dimension' type='ordinal' />
+      <column caption='Steals (Player Totals Cleaned.Csv)' datatype='real' name='[steals (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Steals' datatype='real' name='[steals]' role='measure' type='quantitative' />
+      <column caption='Team (Player Totals Cleaned.Csv)' datatype='string' name='[team (player_totals_cleaned.csv)]' role='dimension' type='nominal' />
+      <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
+      <column caption='Team Abbreviation' datatype='string' name='[team_abbreviation]' role='dimension' type='nominal' />
+      <column caption='Three Point Attempts (Player Totals Cleaned.Csv)' datatype='real' name='[three_point_attempts (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Three Point Attempts' datatype='real' name='[three_point_attempts]' role='measure' type='quantitative' />
+      <column caption='Three Point Attempts Per Game' datatype='real' name='[three_point_attempts_per_game]' role='measure' type='quantitative' />
+      <column caption='Three Point Percentage (Player Totals Cleaned.Csv)' datatype='real' name='[three_point_percentage (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Three Point Percentage' datatype='real' name='[three_point_percentage]' role='measure' type='quantitative' />
+      <column caption='Three Pointers (Player Totals Cleaned.Csv)' datatype='real' name='[three_pointers (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Three Pointers' datatype='real' name='[three_pointers]' role='measure' type='quantitative' />
+      <column caption='Three Pointers Per Game' datatype='real' name='[three_pointers_per_game]' role='measure' type='quantitative' />
+      <column caption='Total Rebounds (Player Totals Cleaned.Csv)' datatype='real' name='[total_rebounds (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Total Rebounds' datatype='real' name='[total_rebounds]' role='measure' type='quantitative' />
+      <column caption='Turnovers (Player Totals Cleaned.Csv)' datatype='real' name='[turnovers (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Turnovers' datatype='real' name='[turnovers]' role='measure' type='quantitative' />
+      <column caption='Two Point Attempts (Player Totals Cleaned.Csv)' datatype='integer' name='[two_point_attempts (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Two Point Attempts' datatype='real' name='[two_point_attempts]' role='measure' type='quantitative' />
+      <column caption='Two Point Percentage (Player Totals Cleaned.Csv)' datatype='real' name='[two_point_percentage (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Two Point Percentage' datatype='real' name='[two_point_percentage]' role='measure' type='quantitative' />
+      <column caption='Two Pointers (Player Totals Cleaned.Csv)' datatype='integer' name='[two_pointers (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+      <column caption='Two Pointers' datatype='real' name='[two_pointers]' role='measure' type='quantitative' />
+      <column caption='Years Of Experience' datatype='integer' name='[years_of_experience]' role='measure' type='quantitative' />
+      <column-instance column='[player_name]' derivation='None' name='[none:player_name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:player_name:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Michael Jordan&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;Stephen Curry&quot;</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>&quot;Damian Lillard&quot;</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>&quot;LeBron James&quot;</bucket>
+            </map>
+            <map to='#43719f'>
+              <bucket>&quot;Klay Thompson&quot;</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>&quot;James Harden&quot;</bucket>
+            </map>
+            <map to='#5b8cb8'>
+              <bucket>&quot;Ray Allen&quot;</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>&quot;Reggie Miller&quot;</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>&quot;Kyle Korver&quot;</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>&quot;Jason Terry&quot;</bucket>
+            </map>
+            <map to='#9bc7e4'>
+              <bucket>&quot;Jamal Crawford&quot;</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>&quot;Vince Carter&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='player_totals_cleaned.csv' id='player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C'>
+            <properties context=''>
+              <relation connection='textscan.0b4bmiy1blgs0k1g89cwf0vylqqp' name='player_totals_cleaned.csv' table='[player_totals_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='season_id' ordinal='0' />
+                  <column datatype='integer' name='season' ordinal='1' />
+                  <column datatype='integer' name='player_id' ordinal='2' />
+                  <column datatype='string' name='player_name' ordinal='3' />
+                  <column datatype='real' name='birth_year' ordinal='4' />
+                  <column datatype='string' name='position' ordinal='5' />
+                  <column datatype='real' name='player_age' ordinal='6' />
+                  <column datatype='integer' name='years_of_experience' ordinal='7' />
+                  <column datatype='string' name='league' ordinal='8' />
+                  <column datatype='string' name='team' ordinal='9' />
+                  <column datatype='integer' name='games_played' ordinal='10' />
+                  <column datatype='real' name='games_started' ordinal='11' />
+                  <column datatype='real' name='minutes_played' ordinal='12' />
+                  <column datatype='integer' name='field_goals' ordinal='13' />
+                  <column datatype='integer' name='field_goal_attempts' ordinal='14' />
+                  <column datatype='real' name='field_goal_percentage' ordinal='15' />
+                  <column datatype='real' name='three_pointers' ordinal='16' />
+                  <column datatype='real' name='three_point_attempts' ordinal='17' />
+                  <column datatype='real' name='three_point_percentage' ordinal='18' />
+                  <column datatype='integer' name='two_pointers' ordinal='19' />
+                  <column datatype='integer' name='two_point_attempts' ordinal='20' />
+                  <column datatype='real' name='two_point_percentage' ordinal='21' />
+                  <column datatype='real' name='effective_field_goal_percentage' ordinal='22' />
+                  <column datatype='integer' name='free_throws' ordinal='23' />
+                  <column datatype='integer' name='free_throw_attempts' ordinal='24' />
+                  <column datatype='real' name='free_throw_percentage' ordinal='25' />
+                  <column datatype='real' name='offensive_rebounds' ordinal='26' />
+                  <column datatype='real' name='defensive_rebounds' ordinal='27' />
+                  <column datatype='real' name='total_rebounds' ordinal='28' />
+                  <column datatype='integer' name='assists' ordinal='29' />
+                  <column datatype='real' name='steals' ordinal='30' />
+                  <column datatype='real' name='blocks' ordinal='31' />
+                  <column datatype='real' name='turnovers' ordinal='32' />
+                  <column datatype='integer' name='personal_fouls' ordinal='33' />
+                  <column datatype='integer' name='points' ordinal='34' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='team_totals_cleaned.csv' id='team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542'>
+            <properties context=''>
+              <relation connection='textscan.02if9au1w2srvt1gxmke200p0p49' name='team_totals_cleaned.csv' table='[team_totals_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='season' ordinal='0' />
+                  <column datatype='string' name='league' ordinal='1' />
+                  <column datatype='string' name='team' ordinal='2' />
+                  <column datatype='string' name='team_abbreviation' ordinal='3' />
+                  <column datatype='boolean' name='playoffs' ordinal='4' />
+                  <column datatype='real' name='games_played' ordinal='5' />
+                  <column datatype='real' name='minutes_played' ordinal='6' />
+                  <column datatype='real' name='field_goals' ordinal='7' />
+                  <column datatype='real' name='field_goal_attempts' ordinal='8' />
+                  <column datatype='real' name='field_goal_percentage' ordinal='9' />
+                  <column datatype='real' name='three_pointers' ordinal='10' />
+                  <column datatype='real' name='three_point_attempts' ordinal='11' />
+                  <column datatype='real' name='three_pointers_per_game' ordinal='12' />
+                  <column datatype='real' name='three_point_attempts_per_game' ordinal='13' />
+                  <column datatype='real' name='three_point_percentage' ordinal='14' />
+                  <column datatype='real' name='two_pointers' ordinal='15' />
+                  <column datatype='real' name='two_point_attempts' ordinal='16' />
+                  <column datatype='real' name='two_point_percentage' ordinal='17' />
+                  <column datatype='real' name='free_throws' ordinal='18' />
+                  <column datatype='real' name='free_throw_attempts' ordinal='19' />
+                  <column datatype='real' name='free_throw_percentage' ordinal='20' />
+                  <column datatype='real' name='offensive_rebounds' ordinal='21' />
+                  <column datatype='real' name='defensive_rebounds' ordinal='22' />
+                  <column datatype='real' name='total_rebounds' ordinal='23' />
+                  <column datatype='real' name='assists' ordinal='24' />
+                  <column datatype='real' name='steals' ordinal='25' />
+                  <column datatype='real' name='blocks' ordinal='26' />
+                  <column datatype='real' name='turnovers' ordinal='27' />
+                  <column datatype='real' name='personal_fouls' ordinal='28' />
+                  <column datatype='real' name='points' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[team]' />
+              <expression op='[team (player_totals_cleaned.csv)]' />
+            </expression>
+            <first-end-point object-id='team_totals_cleaned.csv_92D065D1F26C4F7B963730C56CFE6542' />
+            <second-end-point object-id='player_totals_cleaned.csv_47D2A6436947475E9543ACEDC54ABA4C' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Increase in Three-Point Attempts over Time
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='team_totals_cleaned.csv (Multiple Connections)' name='federated.0vnk9np1rodu6h197wa2g055r209' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vnk9np1rodu6h197wa2g055r209'>
+            <column-instance column='[season]' derivation='Count' name='[cnt:season:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:qk]' pivot='key' type='quantitative' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column-instance column='[three_point_attempts]' derivation='Sum' name='[sum:three_point_attempts:qk]' pivot='key' type='quantitative' />
+            <column caption='Three Point Attempts' datatype='real' name='[three_point_attempts]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vnk9np1rodu6h197wa2g055r209].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vnk9np1rodu6h197wa2g055r209].[cnt:season:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0vnk9np1rodu6h197wa2g055r209].[sum:three_point_attempts:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vnk9np1rodu6h197wa2g055r209].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]' field-type='quantitative' max='2022' min='1980' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vnk9np1rodu6h197wa2g055r209].[sum:three_point_attempts:qk]</rows>
+        <cols>[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]</cols>
+      </table>
+      <simple-id uuid='{B412A60A-FF64-4414-92E5-C81C4CCCE382}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Change in Three Point Percentage over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='team_totals_cleaned.csv (Multiple Connections)' name='federated.0vnk9np1rodu6h197wa2g055r209' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vnk9np1rodu6h197wa2g055r209'>
+            <column-instance column='[three_point_percentage]' derivation='Avg' name='[avg:three_point_percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:qk]' pivot='key' type='quantitative' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column caption='Three Point Percentage' datatype='real' name='[three_point_percentage]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_percentage:qk]' field-type='quantitative' max='0.40000000000000002' min='0.20000000000000001' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_percentage:qk]</rows>
+        <cols>[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]</cols>
+      </table>
+      <simple-id uuid='{346E6A80-EB16-4CCC-8DCE-3A9B81FD1470}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Three Point Percentage and Attempts from Best Player Each Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='team_totals_cleaned.csv (Multiple Connections)' name='federated.0vnk9np1rodu6h197wa2g055r209' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vnk9np1rodu6h197wa2g055r209'>
+            <column-instance column='[three_point_attempts]' derivation='Avg' name='[avg:three_point_attempts:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[three_point_percentage]' derivation='Avg' name='[avg:three_point_percentage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:qk]' pivot='key' type='quantitative' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column caption='Three Point Attempts' datatype='real' name='[three_point_attempts]' role='measure' type='quantitative' />
+            <column caption='Three Point Percentage' datatype='real' name='[three_point_percentage]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_percentage:qk]' palette='red_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_attempts:qk]' />
+              <color column='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_percentage:qk]' />
+              <text column='[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3A8FA7A7-AA83-41EE-A1C2-908FE6DC5A65}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Three Pointers Per Season by Top Shooters</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='team_totals_cleaned.csv (Multiple Connections)' name='federated.0vnk9np1rodu6h197wa2g055r209' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vnk9np1rodu6h197wa2g055r209'>
+            <column-instance column='[three_pointers (player_totals_cleaned.csv)]' derivation='Avg' name='[avg:three_pointers (player_totals_cleaned.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[player_name]' derivation='None' name='[none:player_name:nk]' pivot='key' type='nominal' />
+            <column caption='Player Name' datatype='string' name='[player_name]' role='dimension' type='nominal' />
+            <column caption='Three Pointers (Player Totals Cleaned.Csv)' datatype='real' name='[three_pointers (player_totals_cleaned.csv)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Damian Lillard&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Jamal Crawford&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;James Harden&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Jason Terry&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Klay Thompson&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Kyle Korver&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Ray Allen&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Reggie Miller&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Stephen Curry&quot;' />
+              <groupfilter function='member' level='[none:player_name:nk]' member='&quot;Vince Carter&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' direction='DESC' using='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_pointers (player_totals_cleaned.csv):qk]' />
+          <slices>
+            <column>[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_pointers (player_totals_cleaned.csv):qk]</rows>
+        <cols>[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]</cols>
+      </table>
+      <simple-id uuid='{9EAD0CFC-F4B0-46AA-A6DA-5711952E2CCD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>The Rise of the Three-Point Shot in the NBA</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='team_totals_cleaned.csv (Multiple Connections)' name='federated.0vnk9np1rodu6h197wa2g055r209' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vnk9np1rodu6h197wa2g055r209'>
+        <column-instance column='[player_name]' derivation='None' name='[none:player_name:nk]' pivot='key' type='nominal' />
+        <column caption='Player Name' datatype='string' name='[player_name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='5125' id='17' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='92875' id='8' param='horz' type-v2='layout-flow' w='98400' x='800' y='6125'>
+              <zone h='92875' id='6' type-v2='layout-basic' w='82400' x='800' y='6125'>
+                <zone h='46437' id='3' name='Sheet 1' w='41200' x='800' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46437' id='5' name='Sheet 2' w='41200' x='42000' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46438' id='10' name='Sheet 3' w='41200' x='800' y='52562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46438' id='12' name='Sheet 4' w='41200' x='42000' y='52562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='160' h='92875' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='6125'>
+                <zone h='8125' id='9' name='Sheet 2' pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]' type-v2='color' w='16000' x='83200' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='11' name='Sheet 3' pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_percentage:qk]' type-v2='color' w='16000' x='83200' y='14250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='45875' id='13' name='Sheet 4' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' type-v2='filter' w='16000' x='83200' y='22375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='30750' id='14' name='Sheet 4' pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' type-v2='color' w='16000' x='83200' y='68250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true'>The Rise of the Three-Point Shot in the NBA</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='20' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='5125' id='17' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46437' id='3' is-fixed='true' name='Sheet 1' w='41200' x='800' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46437' id='5' is-fixed='true' name='Sheet 2' w='41200' x='42000' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='9' name='Sheet 2' pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]' type-v2='color' w='16000' x='83200' y='6125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46438' id='10' is-fixed='true' name='Sheet 3' w='41200' x='800' y='52562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='11' name='Sheet 3' pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_percentage:qk]' type-v2='color' w='16000' x='83200' y='14250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='45875' id='13' mode='checkdropdown' name='Sheet 4' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' type-v2='filter' w='16000' x='83200' y='22375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46438' id='12' is-fixed='true' name='Sheet 4' w='41200' x='42000' y='52562'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='30750' id='14' name='Sheet 4' pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' type-v2='color' w='16000' x='83200' y='68250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{30188E05-6B41-4A6B-8CD6-2E3C55B4D182}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{802B8924-4A38-4009-87F0-BF2CAA2569FE}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:season:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{39ACD66C-29BE-44FA-8EE6-7E64818CED44}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[avg:three_point_percentage:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{10CB8FE7-780D-426F-9518-73D88D846045}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0vnk9np1rodu6h197wa2g055r209].[none:player_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{89A624C0-BA1C-452B-98A0-142485971B2A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{F12806C8-E407-4EFE-8128-58A1EAFF37A9}' />
+    </window>
+  </windows>
+</workbook>

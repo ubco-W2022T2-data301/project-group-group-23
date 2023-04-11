@@ -1,8 +1,9 @@
 **Question 2 + Results**
 My research related to the rise of the three-point shot in the NBA. Specifically, my research question was: how much has the three-point volume increased over time in the NBA, and has the three-point percentage increased the same amount? 
 ![Graph1](images/Graph1.png)
-This graph shows that three-point attempts in the NBA have increased from around 5,000 in 1980 to over 85,000 in 2022.
+This graph shows that three-point attempts in the NBA have increased from around 5,000 in 1980 to over 85,000 in 2022. This increase is drastic, and shows how much the three-point shot has revolutionized the NBA and transformed the way players play the game.
 ![Graph2](images/Graph2.png)
-This graph shows that three-point percentage has increased from around 25% in the early 1980s to around 35% today. Although the three-point percentage has stayed at roguhly 35% since around the year 2000, players are shooting much higher volumes today, proving that shooters today are better than ever.
+This graph shows that three-point percentage has increased from around 25% in the early 1980s to around 35% today. Although the three-point percentage has stayed at roughly 35% since around the year 2000, players are shooting much higher volumes today, proving that shooters today are better than ever.
 ![Graph3](images/Graph3.png)
-This heatmap shows the top three-point shooters from every year of the study based on both attempts and volume. As we can see, the best three-point shooting seasons are all recent, proving that shooters have now become better than ever.
+This heatmap shows the top three-point shooters from every year of the study based on both attempts and volume. As we can see, the best three-point shooting seasons are all recent, proving that shooters have now become better than ever. 
+You can find the full analysis [here](https://github.com/ubco-W2022T2-data301/project-group-group-23/blob/main/analysis/analysis2.ipynb) if you are interested in learning more about how the three-point shot has changed the game of basketball. Overall, this analysis proves that there has been a drastic increase in the number of three-point shots taken in the NBA, with a notable increase in three-point percentage as well. Additonally, since three-point volume has continued increasing, and all the top three-point shooting seasons are recent, the trend towards three-point shooting is likely to continue in the near future.
