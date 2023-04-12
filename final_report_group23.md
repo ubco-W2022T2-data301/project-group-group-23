@@ -11,7 +11,9 @@ Being in the top left corner of the tree map also means that Curry performs bett
 
 ![Analysisgraph3](images/Analysisgraph3.png)
 
-The box plot above reveals that Stephen Curry outperforms Ray Allen and Reggie Miller in terms of his scoring ability, as demonstrated by his higher median, wider range, and greater variability in performance.
+The box plot above reveals that Stephen Curry outperforms Ray Allen and Reggie Miller in terms of his scoring ability, as demonstrated by his higher median, wider range, and greater variability in performance.You can find the full analysis [here](https://github.com/ubco-W2022T2-data301/project-group-group-23/blob/main/analysis/analysis1.ipynb) if you are interested in reading a more in depth anaylsis of Stephen Curry ability. 
+
+Overall, Stephen Curry's exceptional three-point shooting abilities and consistent high-ranking performance in various performance metrics establish him as one of the greatest players in basketball history, demonstrating his skill and versatility as a dynamic scorer and shooter among other top players.
 
 **Question 2 + Results**
 
@@ -23,9 +25,7 @@ This graph shows that three-point attempts in the NBA have increased from around
 
 ![Graph2](images/Graph2.png)
 
-This graph shows that three-point percentage has increased from around 25% in the early 1980s to around 35% today. Although the three-point percentage has stayed at roughly 35% since around the year 2000, players are shooting much higher volumes today, proving that shooters today are better than ever. You can find the full analysis [here](https://github.com/ubco-W2022T2-data301/project-group-group-23/blob/main/analysis/analysis1.ipynb) if you are interested in reading a more in depth anaylsis of Stephen Curry ability. 
-
-In conclusion, Stephen Curry's exceptional three-point shooting abilities and consistent high-ranking performance in various performance metrics establish him as one of the greatest players in basketball history, demonstrating his skill and versatility as a dynamic scorer and shooter among other top players.
+This graph shows that three-point percentage has increased from around 25% in the early 1980s to around 35% today. Although the three-point percentage has stayed at roughly 35% since around the year 2000, players are shooting much higher volumes today, proving that shooters today are better than ever.
 
 ![Graph3](images/Graph3.png)
 
