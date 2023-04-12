@@ -7,3 +7,5 @@ This graph shows that three-point percentage has increased from around 25% in th
 ![Graph3](images/Graph3.png)
 This heatmap shows the top three-point shooters from every year of the study based on both attempts and volume. As we can see, the best three-point shooting seasons are all recent, proving that shooters have now become better than ever. 
 You can find the full analysis [here](https://github.com/ubco-W2022T2-data301/project-group-group-23/blob/main/analysis/analysis2.ipynb) if you are interested in learning more about how the three-point shot has changed the game of basketball. Overall, this analysis proves that there has been a drastic increase in the number of three-point shots taken in the NBA, with a notable increase in three-point percentage as well. Additonally, since three-point volume has continued increasing, and all the top three-point shooting seasons are recent, the trend towards three-point shooting is likely to continue in the near future.
+
+
