@@ -1,3 +1,7 @@
+**Introduction**
+
+Through our analytics project, we aim to analyze the impact of Stephen Curry on the game of basketball. Specifically, we want to examine how his playing style has contributed to the rise of three-point shooting and the decline of mid-range shooting in the NBA. By conducting this research, we will quantify Curry’s abilities and skills through data analysis. We also want to show how Curry’s impact on the game has given him a unique place in basketball history.
+
 **Question 1 + Results**
 
 My research goal is to analyze Stephen Curry's offensive skills, particularly his incredible three-point shooting, to show why he is one of the greatest basketball players of all time. In this research, I hope to demonstrate his particular strengths to a larger audience in an understandable manner.
