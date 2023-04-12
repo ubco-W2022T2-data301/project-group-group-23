@@ -1,2 +1,0 @@
-**Question 3 and Results**
-My research investigated the degree that the two-point shots decreased in the NBA. And is mid-range shooting still an effective strategy in the present and future? This study will examine the historical data on mid-range shooting, compare the best mid-range shooters across eras, and explore the current state of mid-range shooting in the NBA to determine its continued relevance as a viable strategy.
