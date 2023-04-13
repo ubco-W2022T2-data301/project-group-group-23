@@ -53,3 +53,8 @@ The following line plots demonstrate that while the average amount of attempted 
 
 
 The three-pointer shot has overshadowed the two-pointer since its inception. However, we see evidence that the two-pointer will remain relevant as the individual players become more proficient at the two-pointer shot. However, George Gervin and Michael Jordan will remain undefeated in their overall two-pointer success rate due to the more popular three-pointer.
+
+**Conclusion**
+
+In conclusion, our analytics proejct has showcased Stephen Curry's impact on the game of absektball, paritucarly on the rise of three-point shooting and the declien of mid-range, two-point shooting. Curry's exceptional performance in various categories and strong shooting ability, as demonstrated by this data analysis, place him among the greatest NBA players of all time. The project also demonstrated that the trend towards three-point shooting will likely continue, as players are taking more shots while still making the same percentage of them. Additonally,t he data shows that two-point percentage has increased even thoguh volume has decreased, suggesting that the players who continue to shoot two-pointers are more efficient than ever. Overall, this project provides valuable insights into the way the NBA has changed around the shooting revolution and rise of Stephen Curry in recent years.
+
